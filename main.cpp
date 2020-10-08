@@ -1,5 +1,6 @@
 #include <iostream>
 #include "computadora.h"
+#include "laboratorio.h"
 
 using namespace std;
 
@@ -16,6 +17,13 @@ int main()
     compu02.setNombreDelEquipo("MacBook Pro");
     compu02.setRam(16);
     compu02.setAlmacenamiento(512);
+
+    
+    Laboratorio labo;
+    labo.agregarFinal(compu01);
+    labo.agregarFinal(compu02);
+
+    labo.mostrar();
 
     return 0;
 }
