@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 
+Computadora::Computadora(){}
+
 Computadora::Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int discoduro)
 {
     this->sistemaOperativo = sistemaOperativo;

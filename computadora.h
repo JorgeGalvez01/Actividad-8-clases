@@ -13,6 +13,7 @@ private:
     int discoDuro;
 
 public:
+    Computadora();
     Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int discoDuro);
 
     void setSistemaOperativo(const string &valor);
