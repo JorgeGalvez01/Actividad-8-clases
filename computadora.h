@@ -10,11 +10,11 @@ private:
     string sistemaOperativo;
     string nombreDelEquipo;
     int ram;
-    int discoDuro;
+    int almacenamiento;
 
 public:
     Computadora();
-    Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int discoDuro);
+    Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int almacenamiento);
 
     void setSistemaOperativo(const string &valor);
     string getSistemaOperativo();
@@ -25,8 +25,8 @@ public:
     void setRam(int valor);
     int getRam();
 
-    void setDiscoDuro(int valor);
-    int getDiscoDuro();
+    void setAlmacenamiento(int valor);
+    int getAlmacenamiento();
 };
 
 

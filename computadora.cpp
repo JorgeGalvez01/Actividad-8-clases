@@ -5,12 +5,12 @@ using namespace std;
 
 Computadora::Computadora(){}
 
-Computadora::Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int discoduro)
+Computadora::Computadora(const string &sistemaOperativo, const string &nombreDelEquipo, int ram, int almacenamiento)
 {
     this->sistemaOperativo = sistemaOperativo;
     this->nombreDelEquipo = nombreDelEquipo;
     this->ram = ram;
-    this->discoDuro = discoDuro;
+    this->almacenamiento = almacenamiento;
 }
 
 void Computadora::setSistemaOperativo(const string &valor)
@@ -40,11 +40,11 @@ int Computadora::getRam()
     return ram;
 }
 
-void Computadora::setDiscoDuro(int valor)
+void Computadora::setAlmacenamiento(int valor)
 {
-    discoDuro = valor;
+    almacenamiento = valor;
 }
-int Computadora::getDiscoDuro()
+int Computadora::getAlmacenamiento()
 {
-    return discoDuro;
+    return almacenamiento;
 }
