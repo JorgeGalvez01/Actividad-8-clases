@@ -36,7 +36,7 @@ public:
         out << setw (12) << compu.sistemaOperativo;
         out << setw (15) << compu.nombreDelEquipo;
         out << setw (6) << compu.ram;
-        out << setw (6) << compu.almacenamiento;
+        out << setw (14) << compu.almacenamiento;
         out << endl;
 
         return out;
