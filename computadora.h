@@ -41,6 +41,23 @@ public:
 
         return out;
     }
+
+    friend istream& operator >>(istream &in, Computadora &compu)
+    {
+        cout << "Sistema operativo: ";
+        getline(cin, compu.sistemaOperativo);
+
+        cout << "Nombre del equipo: ";
+        getline (cin, compu.nombreDelEquipo);
+
+        cout << "Ram: ";
+        cin >> compu.ram;
+
+        cout << "Almacenamiento: " ;
+        cin >> compu.almacenamiento;
+
+        return in;
+    }
 };
 
 

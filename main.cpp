@@ -23,8 +23,10 @@ int main()
     labo.agregarFinal(compu01);
     labo.agregarFinal(compu02);
 
+    Computadora compu03;
+    cin >> compu03;
     labo.mostrar();
-    //cout << compu01;
+    cout << compu03;
     //cout << compu02;
     return 0;
 }
