@@ -2,6 +2,8 @@
 #define COMPUTADORA_H
 
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 class Computadora
@@ -27,6 +29,18 @@ public:
 
     void setAlmacenamiento(int valor);
     int getAlmacenamiento();
+
+    friend ostream& operator <<(ostream &out, Computadora const &compu)
+    {
+        out << left;
+        out << setw (12) << compu.sistemaOperativo;
+        out << setw (15) << compu.nombreDelEquipo;
+        out << setw (6) << compu.ram;
+        out << setw (6) << compu.almacenamiento;
+        out << endl;
+
+        return out;
+    }
 };
 
 
