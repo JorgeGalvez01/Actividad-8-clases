@@ -12,5 +12,11 @@ public:
     Laboratorio();
     void agregarFinal(const Computadora &compu);
     void mostrar();
+
+    friend Laboratorio& operator <<(Laboratorio &l, const Computadora &compu)
+    {
+        l.agregarFinal(compu);
+        return l;
+    }
 };
 #endif

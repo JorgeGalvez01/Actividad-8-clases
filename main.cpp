@@ -20,13 +20,12 @@ int main()
 
     
     Laboratorio labo;
-    labo.agregarFinal(compu01);
-    labo.agregarFinal(compu02);
-
+    labo << compu01 << compu02;
+    
     Computadora compu03;
     cin >> compu03;
+    labo << compu03;
+
     labo.mostrar();
-    cout << compu03;
-    //cout << compu02;
     return 0;
 }
