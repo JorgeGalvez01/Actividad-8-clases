@@ -13,6 +13,8 @@ public:
     void agregarFinal(const Computadora &compu);
     void mostrar();
 
+    void respaldar_tabla();
+
     friend Laboratorio& operator <<(Laboratorio &l, const Computadora &compu)
     {
         l.agregarFinal(compu);

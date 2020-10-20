@@ -1,4 +1,5 @@
 #include "laboratorio.h"
+#include <fstream>
 
 Laboratorio::Laboratorio()
 {
@@ -39,4 +40,26 @@ void Laboratorio::mostrar()
         cout << endl;*/
     }
     
+}
+
+void Laboratorio::respaldar_tabla()
+{
+    ofstream archivo("computadoras_tabla.txt");
+    if (archivo.is_open())
+    {
+        archivo << left;
+        archivo << setw(12) << "OS";
+        archivo << setw(15) << "Equipo";
+        archivo << setw(6) << "Ram";
+        archivo << setw(14) << "Almacenamiento";
+        archivo << endl;
+
+        for (size_t i = 0; i < contador; i++)
+    {
+        Computadora &compu  = arreglo[i];
+        archivo << compu;
+    }
+
+    }
+    archivo.close();
 }

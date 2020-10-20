@@ -26,6 +26,8 @@ int main()
     cin >> compu03;
     labo << compu03;
 
+    labo.respaldar_tabla();
+
     labo.mostrar();
     return 0;
 }
