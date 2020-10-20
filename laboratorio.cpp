@@ -63,3 +63,19 @@ void Laboratorio::respaldar_tabla()
     }
     archivo.close();
 }
+
+void Laboratorio::respaldar()
+{
+    ofstream archivo("computadoras.txt");
+    if (archivo.is_open()){
+        for (size_t i = 0; i < contador; i++)
+        {
+            Computadora &compu = arreglo[i];
+            archivo << compu.getSistemaOperativo() << endl;
+            archivo << compu.getNombreDelEquipo() << endl;
+            archivo << compu.getRam() << endl;
+            archivo << compu.getAlmacenamiento() << endl;
+        }
+    }
+    archivo.close();
+}
